@@ -38,7 +38,6 @@ public class User implements Serializable{
 
 	
 
-
 	public Long getId() {
 		return id;
 	}
@@ -89,14 +88,6 @@ public class User implements Serializable{
 	}
 
 
-	@Override
-	public String toString() {
-		return "User [id=" + id + ", name=" + name + ", email=" + email + ", phone=" + phone + ", password=" + password
-				+ "]";
-	}
-
-
-
 
 	@Override
 	public int hashCode() {
@@ -121,9 +112,11 @@ public class User implements Serializable{
 
 
 
-
-	
-	
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", email=" + email + ", phone=" + phone + ", password=" + password
+				+ "]";
+	}
 	
 
 	
